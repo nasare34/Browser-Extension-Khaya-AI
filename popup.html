@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Khaya Translator</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; width: 300px; }
+    textarea { width: 100%; height: 60px; }
+    select, button { margin-top: 5px; width: 100%; }
+    #result { margin-top: 10px; color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <textarea id="text" placeholder="Enter or select text..."></textarea>
+
+  <label for="source_lang">From:</label>
+  <select id="source_lang">
+    <option value="en">English</option>
+    <option value="tw">Twi</option>
+    <option value="ee">Ewe</option>
+    <option value="gaa">Ga</option>
+    <option value="fat">Fante</option>
+    <option value="yo">Yoruba</option>
+    <option value="dag">Dagbani</option>
+    <option value="ki">Kikuyu</option>
+    <option value="gur">Gurune</option>
+    <option value="luo">Luo</option>
+    <option value="mer">Kimeru</option>
+    <option value="kus">Kusaal</option>
+  </select>
+
+  <label for="target_lang">To:</label>
+  <select id="target_lang">
+    <option value="tw">Twi</option>
+    <option value="en">English</option>
+    <option value="ee">Ewe</option>
+    <option value="gaa">Ga</option>
+    <option value="fat">Fante</option>
+    <option value="yo">Yoruba</option>
+    <option value="dag">Dagbani</option>
+    <option value="ki">Kikuyu</option>
+    <option value="gur">Gurune</option>
+    <option value="luo">Luo</option>
+    <option value="mer">Kimeru</option>
+    <option value="kus">Kusaal</option>
+  </select>
+
+  <button id="translateBtn">Translate</button>
+  <div id="result"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
